@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    background-image: url(resimler/arka.jpg);
+    background-size: cover;
+}
+
+a {
+    color: rgb(41, 49, 137);
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+
+/* header start */
+header {
+    height: 100px;
+    border-bottom: 2px solid rgb(41, 49, 137, 0.06)
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+}
+
+header nav .logo a {
+    color: rgb(41, 49, 137);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+nav ul {
+    display: flex;
+    column-gap: 30px;
+    font-size: 13px;
+}
+
+nav ul li a {
+    color: rgb(41, 49, 137);
+    text-decoration: none;
+    transition: color .25s ease;
+
+}
+
+nav ul li a:hover {
+    color: rgb(41, 49, 137, 0.5);
+
+
+}
+
+nav .menu {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+nav .menu .hakkimda {
+    color: rgb(41, 49, 137);
+    text-decoration: none;
+    background: rgb(41, 49, 137, 0.1);
+    padding: 12px 20px;
+    border-radius: 56px;
+    font-size: 13px;
+    transition: all .25s ease;
+}
+
+nav .menu .hakkimda:hover {
+    color: rgb(41, 49, 137, 0.5);
+    background-color: rgb(41, 49, 137, 0.1);
+}
+
+/* section start */
+
+.content {
+    color: rgb(41, 49, 137);
+    height: calc(100vh - 100px);
+    padding-top: 100px;
+}
+
+.content h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 30px;
+    font-style: normal;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.content .buton {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    column-gap: 15px;
+}
+
+.content .buton a {
+    background: rgb(41, 49, 137, 0.1);
+    padding: 12px 20px;
+    border-radius: 56px;
+    transition: all .25s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.content .buton a:hover {
+    color: rgb(41, 49, 137, 0.5);
+    background-color: rgb(41, 49, 137, 0.1);
+}
+
+
+/* section end */
+
+
+/* responsive start */
+@media(max-width:576px) {
+    .container {
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 12px;
+
+
+    }
+
+    .menu ul {
+        column-gap: 15px;
+        font-size: 6px;
+        text-align: end;
+    }
+
+    .menu .hakkimda {
+        display: none;
+    }
+
+    .content {
+        padding-top: 50px;
+    }
+
+    .content h1 {
+        font-size: 30px;
+    }
+
+    .content h2 {
+        font-size: 20px;
+    }
+
+    .content .buton a {
+        padding: 10px;
+        width: 90%;
+    }
+
+
+
+}
+
+/* responsive end */
